@@ -1,0 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP:wght@500&family=Open+Sans:wght@700&family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------
+    Header Styles 
+------------------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 120px;
+}
+.nav-title{
+    width: 55%;
+    font-weight: 700;
+    font-size: 24px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+
+/* ----------------------------
+    Media Queries
+---------------------------- */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 688px){
+    nav{
+        display: flex;
+        padding: 35px 16px;
+        align-items: center;
+    }
+    .nav-title{
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        /* padding-left: 25px; */
+        margin-left: 25px;
+    }
+    nav ul{
+        display: flex;
+        padding: 0;
+    }
+    .menu-icon{
+        width: 13%;
+        margin: 0;
+        padding-left: 16px;
+    }
+    .menu{
+        width: 30px;
+        height: 3px;
+        background-color: #3A3A3A;
+        margin: 6px 0;
+    }
+    ul .ul-list{
+        display: none;
+        margin-left: 0;
+        padding: 0;
+    }
+    .cart{
+        padding-right: 16px;
+    }
+}
