@@ -17,7 +17,7 @@ nav{
     margin: 85px 120px 0 120px;
 }
 .nav-title{
-    width: 56%;
+    width: 57%;
     font-weight: 700;
     font-size: 24px;
     color: #3A3A3A;;
@@ -25,12 +25,12 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
+    gap: 35px;
 }
 nav li{
     font-weight: 600;
     font-size: 16px;
     list-style: none;
-    padding-left: 35px;
     color: #3A3A3A;;
 }
 
@@ -70,7 +70,8 @@ nav li{
     font-size: 16px;
     color: #FFFFFF;
 }
-.banner-btn, i{
+.banner-btn, .fa-arrow-right{
+    /* align-items: center; */
     padding-left: 15px;
 }
 
@@ -89,6 +90,109 @@ nav li{
     top: -350px;
 }
 
+/* ----------------------------
+    Logos Section Styles
+---------------------------- */
+.grad-line1{
+    border: 0;
+    height: .3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(210, 210, 210), rgba(0, 0, 0, 0));
+    margin: 170px 165px 36px 160px;
+}
+.logos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    /* width: 1110px;
+    height: 110px;
+    border: 1px solid lightgrey;
+    padding: 33px; */
+    /* margin: 205px 165px 100px 160px; */
+    margin: 0 165px 36px 160px;
+}
+.grad-line2{
+    border: 0;
+    height: .5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(210, 210, 210), rgba(0, 0, 0, 0));
+    margin: 0 165px 100px 160px;
+}
+
+
+/* --------------------------------------
+    Popular Collection Section Styles
+-------------------------------------- */
+.container{
+    position: absolute;
+    width: 1050px;
+    height: 1665px;
+    margin-left: 200px;
+    border: 2px solid red;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.product{
+    width: 329px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}   
+
+.product .product-banner img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+
+.product-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.product-cost{
+    font-weight: 400;
+    font-size: 24px;
+    colo: rgba(0, 0, 0, 0.87);
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.product-info{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.product-rating{
+    font-weight: 700;
+    color: #5E6366;
+    padding-left: 15px;
+}
+
+.produse-service{
+    font-weight: 700;
+    color: #787885;
+    hyphens: manual ;
+    padding: 0 125px 50px 15px;
+    
+
+}
 
 /* ----------------------------
     Media Queries
@@ -181,3 +285,9 @@ nav li{
     }
 
 }
+/* .banner-section{
+    display: none;
+} */
+/* .banner-section{
+    visibility: hidden;
+} */
